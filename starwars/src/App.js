@@ -21,15 +21,11 @@ const App = () => {
       .then(res => {
         setData(res.data.results)
         setInfo(res.data.info);
-        console.log(res.data);
       });
     };
 
     getData();
   }, [query]);
-
-  console.log(info);
-  console.log(data);
 
   return (
     <div className="App">

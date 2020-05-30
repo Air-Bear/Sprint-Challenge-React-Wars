@@ -4,7 +4,6 @@ import {Container, Col, Row,  Button, Card, CardBody, CardSubtitle, CardTitle, C
 import axios from "axios";
 
 function CharacterCard(props){
-	console.log(props);
 	return(
 		<Col>
 			<Card>
