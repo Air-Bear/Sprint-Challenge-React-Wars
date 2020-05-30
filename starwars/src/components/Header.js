@@ -6,11 +6,11 @@ function Header(props){
 		<Navbar color="dark" dark>
 			<Container>
 				<Row>
-					<Button>previous</Button>
+					<Button onClick={() => props.setQuery(props.info.prev)}>previous</Button>
 					<InputGroup sm={4}>
-			        	<Input placeholder="Filter by name" onChange={e => props.setQuery("?name=" + e.target.value)} />
+			        	<Input placeholder="Filter by name" onChange={e => props.setQuery("https://rickandmortyapi.com/api/character/?name=" + e.target.value)} />
 			    	</InputGroup>
-			    	<Button>next</Button>
+			    	<Button onClick={() => props.setQuery(props.info.next)}>next</Button>
 					</Row>
 			</Container>
 		</Navbar>
